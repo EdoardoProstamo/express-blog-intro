@@ -20,42 +20,44 @@ app.get('/', (req, res) => {
 });
 
 
-const desserts = [
-    {
-        title: "dessert-1",
-        content: "Ciambellone",
-        img: "ciambellone.jpeg",
-        tags: ["ciambella", "dolce"]
-    },
-    {
-        title: "dessert-2",
-        content: "Cracker di barbabietola",
-        img: "cracker_barbabietola.jpeg",
-        tags: ["cracker", "barbabietola", "biscotti", "dolci"]
-    },
-    {
-        title: "dessert-3",
-        content: "Pane fritto dolce",
-        img: "pane_fritto_dolce.jpeg",
-        tags: ["pane", "frittura", "dolci"]
-    },
-    {
-        title: "dessert-4",
-        content: "Pasta di barbabietola",
-        img: "pasta_barbabietola.jpeg",
-        tags: ["pasta", "barbabietola"]
-    },
-    {
-        title: "dessert-5",
-        content: "Torta paesana",
-        img: "torta_paesana.jpeg",
-        tags: ["torta", "paese", "cioccolato", "dolce"]
-    },
-];
-
-
+// chiamata e risposta rotta /bacheca 
 app.get('/bacheca', (req, res) => {
 
-    console.log('chiamata rotta bacheca');
+    // console.log('chiamata rotta bacheca');
+
+    const desserts = [
+        {
+            title: "dessert-1",
+            content: "Ciambellone",
+            img: "ciambellone.jpeg",
+            tags: ["ciambella", "dolce"]
+        },
+        {
+            title: "dessert-2",
+            content: "Cracker di barbabietola",
+            img: "cracker_barbabietola.jpeg",
+            tags: ["cracker", "barbabietola", "biscotti", "dolci"]
+        },
+        {
+            title: "dessert-3",
+            content: "Pane fritto dolce",
+            img: "pane_fritto_dolce.jpeg",
+            tags: ["pane", "frittura", "dolci"]
+        },
+        {
+            title: "dessert-4",
+            content: "Pasta di barbabietola",
+            img: "pasta_barbabietola.jpeg",
+            tags: ["pasta", "barbabietola"]
+        },
+        {
+            title: "dessert-5",
+            content: "Torta paesana",
+            img: "torta_paesana.jpeg",
+            tags: ["torta", "paese", "cioccolato", "dolce"]
+        },
+    ];
+
+    res.send([desserts]);
     
 });
