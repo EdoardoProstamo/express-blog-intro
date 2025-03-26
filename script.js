@@ -10,4 +10,11 @@ const porta = 2700;
 
 app.listen (porta, () => {
     console.log('Server attivato. Porta numero ' + porta);
-})
+});
+
+app.get('/', (req, res) => {
+    console.log('chiamata rotta principale');
+
+    res.send('Server del mio blog');
+    
+});
