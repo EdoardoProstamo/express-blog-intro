@@ -63,3 +63,6 @@ app.get('/bacheca', (req, res) => {
     res.json(desserts);
     
 });
+
+
+// app.use(express.static('images'));
