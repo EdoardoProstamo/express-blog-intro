@@ -4,4 +4,10 @@
 // - Configuriamo gli asset statici sull’applicazione in modo che si possano visualizzare le immagini associate ad ogni post.
 // - Testare su postman;
 
-console.log(ciao);
+const fileExpress = require ('express');
+const app = fileExpress();
+const porta = 2700;
+
+app.listen (porta, () => {
+    console.log('Server attivato. Porta numero ' + porta);
+})
