@@ -51,4 +51,11 @@ const desserts = [
         img: "torta_paesana.jpeg",
         tags: ["torta", "paese", "cioccolato", "dolce"]
     },
-]
+];
+
+
+app.get('/bacheca', (req, res) => {
+
+    console.log('chiamata rotta bacheca');
+    
+});
