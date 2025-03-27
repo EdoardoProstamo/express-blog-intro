@@ -65,4 +65,4 @@ app.get('/bacheca', (req, res) => {
 });
 
 
-// app.use(express.static('images'));
+app.use(fileExpress.static('images'));
